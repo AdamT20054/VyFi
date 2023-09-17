@@ -40,7 +40,7 @@ async function updateNicknames(client) {
         await sleep(1500);
         if (guild.members.me.permissions.has(PermissionsBitField.Flags.ChangeNickname))
             guild.members.me.setNickname(`VYFI ${price_change_24h >= 0 ? '⬈' : '⬊'} ${(current_price).toFixed(2)}$`)
-                .catch(err => console.error(`${coinSymbol}: Could not change nickname in Guild '${guild.name}': ${err}`));
+                .catch(err => err);
 
         if (guild.members.me.permissions.has(PermissionsBitField.Flags.ManageRoles)) {
             const roles = await validateRoles(guild)
@@ -51,21 +51,21 @@ async function updateNicknames(client) {
 
             if (price_change_24h >= 0 && !guild.members.me.roles.cache.find(({name}) => name === 'tickers-green'))
                 guild.members.me.roles.add(roles.get('green'))
-                    .catch(err => console.error(`${coinSymbol}: Could not add roles in Guild '${guild.name}': ${err}`));
+                    .catch(err => err);
 
 
             if (price_change_24h < 0 && !guild.members.me.roles.cache.find(({name}) => name === 'tickers-red'))
                 guild.members.me.roles.add(roles.get('red'))
-                    .catch(err => console.error(`${coinSymbol}: Could not add roles in Guild '${guild.name}': ${err}`));
+                    .catch(err => err);
 
             if (price_change_24h >= 0 && !guild.members.me.roles.cache.find(({name}) => name === 'tickers-green'))
                 guild.members.me.roles.remove(roles.get('red'))
-                    .catch(err => console.error(`${coinSymbol}: Could not add roles in Guild '${guild.name}': ${err}`));
+                    .catch(err => err);
 
 
             if (price_change_24h < 0 && !guild.members.me.roles.cache.find(({name}) => name === 'tickers-red'))
                 guild.members.me.roles.remove(roles.get('green'))
-                    .catch(err => console.error(`${coinSymbol}: Could not add roles in Guild '${guild.name}': ${err}`));
+                    .catch(err => err);
 
         }
     }
