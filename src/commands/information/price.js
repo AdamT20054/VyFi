@@ -15,7 +15,7 @@ module.exports = {
     name: 'price',
     description: "Get VyFi's current price and common conversions!",
     devOnly: false,
-    testOnly: true,
+    testOnly: false,
     deleted: false,
     options: [],
     permissionsRequired: [PermissionFlagsBits.SendMessages],
@@ -27,7 +27,7 @@ module.exports = {
         const priceUSD = temp.data[`804f5544c1962a40546827cab750a88404dc7108c0f588b72964754f-56594649`].priceUSD.toFixed(2);
         const priceADA = 0;
 
-        // For ADA price, query mariaDB for the last price. Set to 0 while this feature is implemented.
+        // For ADA price, query mariaDB for the last price. Set to zero while this feature is implemented.
         // This Feature currently requires me to edit the database manager functions.
 
         interaction.reply({
