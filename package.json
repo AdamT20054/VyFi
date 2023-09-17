@@ -1,0 +1,34 @@
+{
+  "name": "vyfi",
+  "version": "1.0.0",
+  "description": "The VyFi Discord bot made for the VyFi team!",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamT20054/VyFi.git"
+  },
+  "keywords": [
+    "Vyfi",
+    "VyFinance",
+    "Discord",
+    "Discord",
+    "bot",
+    "Discord",
+    "V14",
+    "DiscordJS",
+    "DJSv14"
+  ],
+  "author": "Adam20054",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/AdamT20054/VyFi/issues"
+  },
+  "homepage": "https://github.com/AdamT20054/VyFi#readme",
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1"
+  }
+}
