@@ -8,7 +8,8 @@
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/AdamT20054/GasWatch/total) ![Contributors](https://img.shields.io/github/contributors/AdamT20054/GasWatch?color=dark-green) ![Issues](https://img.shields.io/github/issues/AdamT20054/GasWatch) ![License](https://img.shields.io/github/license/AdamT20054/GasWatch) ![Forks](https://img.shields.io/github/forks/AdamT20054/GasWatch?style=social) ![Stargazers](https://img.shields.io/github/stars/AdamT20054/GasWatch?style=social)
+[![AdamT20054 - VyFi](https://img.shields.io/static/v1?label=AdamT20054&message=VyFi&color=blue&logo=github)](https://github.com/AdamT20054/VyFi "Go to GitHub repo")
+![Downloads](https://img.shields.io/github/downloads/AdamT20054/VyFi/total) ![Contributors](https://img.shields.io/github/contributors/AdamT20054/VyFi?color=dark-green) [![issues - VyFi](https://img.shields.io/github/issues/AdamT20054/VyFi)](https://github.com/AdamT20054/VyFi/issues) ![License](https://img.shields.io/github/license/AdamT20054/VyFi) ![Forks](https://img.shields.io/github/forks/AdamT20054/VyFi?style=social) ![Stargazers](https://img.shields.io/github/stars/AdamT20054/VyFi?style=social)
 
 ## Table of Contents
 
@@ -96,8 +97,10 @@ GNU GPLv3 License</a>
 ## Acknowledgements
 
 The handler was largely inspired by [Not Under Ctrl](https://github.com/notunderctrl) <3 </br>
+
 Ryan at VyFi kindly provided the API's required to make this happen <3 </br>
-Thank you to everyone who has helped test, improve and support this project <3 </br>
+
+Thank you to everyone who has helped test, improve and support this project since it first hit the public in 2021! </br>
 
 ## Contact me
 
