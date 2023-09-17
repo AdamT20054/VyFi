@@ -3,12 +3,12 @@
   <h3 align="center">VyFi</h3>
 
   <p align="center">
-    The official Discord bot used by the VyFi team and public!
+    The official Discord bot used by the VyFi team and public! 
 <br/>
   </p>
 </p>
 
-![License](https://img.shields.io/github/license/AdamT20054/VyFi.svg?style=for-the-badge) ![Repo Size](https://img.shields.io/github/languages/code-size/AdamT20054/VyFi.svg?style=for-the-badge)  ![FORKS](https://img.shields.io/github/forks/AdamT20054/VyFi.svg?style=for-the-badge&social) ![Stars](https://img.shields.io/github/stars/AdamT20054/VyFi.svg?style=for-the-badge)
+![Downloads](https://img.shields.io/github/downloads/AdamT20054/GasWatch/total) ![Contributors](https://img.shields.io/github/contributors/AdamT20054/GasWatch?color=dark-green) ![Issues](https://img.shields.io/github/issues/AdamT20054/GasWatch) ![License](https://img.shields.io/github/license/AdamT20054/GasWatch) ![Forks](https://img.shields.io/github/forks/AdamT20054/GasWatch?style=social) ![Stargazers](https://img.shields.io/github/stars/AdamT20054/GasWatch?style=social)
 
 ## Table of Contents
 
