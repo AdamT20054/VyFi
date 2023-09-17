@@ -48,10 +48,10 @@ module.exports = {
                     // The above throws an error, not entirely sure why this code is here in the first place
                     // Going to keep removed until something reminds me why I put it here. Direct from old codebase.
 
-                    await i.followUp({
-                        content: `Thanks for using the Vyfi support bot!`,
-                        ephemeral: true
-                    });
+                    //await i.followUp({
+                    //    content: `Thanks for using the Vyfi support bot!`,
+                    //   ephemeral: true
+                    //});
                 }
             });
         } catch (error) {

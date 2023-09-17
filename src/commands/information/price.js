@@ -1,5 +1,6 @@
 const {PermissionFlagsBits} = require('discord.js');
 const axios = require('axios');
+require('dotenv').config();
 
 const priceButtons = require('../../utils/commandutils/price/priceButtons');
 const priceEmbeds = require('../../utils/commandutils/price/priceEmbeds');
@@ -22,8 +23,8 @@ module.exports = {
 
     callback: async (client, interaction) => {
 
-        const temp = await axios.get(`hx`).catch(console.error);
-        const priceUSD = temp.data[`8x`].priceUSD.toFixed(2);
+        const temp = await axios.get(process.env.priceAPI).catch(console.error);
+        const priceUSD = temp.data[`804f5544c1962a40546827cab750a88404dc7108c0f588b72964754f-56594649`].priceUSD.toFixed(2);
         const priceADA = 0;
 
         // For ADA price, query mariaDB for the last price. Set to 0 while this feature is implemented.
@@ -44,8 +45,8 @@ module.exports = {
                     ephemeral: true
                 });
                 if (i.customId === 'refresh') {
-                    const temp = await axios.get(`x`).catch(console.error);
-                    const priceUSD = temp.data[`x`].priceUSD.toFixed(2);
+                    const temp = await axios.get(process.env.priceAPI).catch(console.error);
+                    const priceUSD = temp.data[`804f5544c1962a40546827cab750a88404dc7108c0f588b72964754f-56594649`].priceUSD.toFixed(2);
                     const priceADA = 0;
 
                     return i.editReply({
