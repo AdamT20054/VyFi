@@ -43,19 +43,21 @@ module.exports = async (client, interaction) => {
                         content: 'You do not have permission to run this command.',
                         ephemeral: true,
                     });
-                    break;
+                    return;
                 }
             }
         }
 
         if (commandObject.botPermissions?.length) {
             for (const permission of commandObject.botPermissions) {
-                if (!interaction.guild.me.permissions.has(permission)) {
+                const bot = interaction.guild.members.me;
+
+                if (!bot.permissions.has(permission)) {
                     interaction.reply({
-                        content: 'I do not have permission to run this command.',
+                        content: "I don't have enough permissions.",
                         ephemeral: true,
                     });
-                    break;
+                    return;
                 }
             }
         }
@@ -64,6 +66,6 @@ module.exports = async (client, interaction) => {
 
 
     } catch (error) {
-        console.error(`There was an error running this command: ${error}`);
+        console.error(`There was an error running this command: ${error} \n ${error.stack}`);
     }
 }
